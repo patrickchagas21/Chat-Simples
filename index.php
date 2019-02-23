@@ -2,17 +2,18 @@
 
 require_once("vendor/autoload.php");
 
-use Pcode\DB\Sql;
+use \Slim\Slim;
+use \Pcode\Page;
 
-$app = new Slim\Slim();
+$app = new Slim();
+
+$app->config('debug', true);
 
 $app->get('/', function() {
 
-	$sql = new Sql();
+	$page = new Page();
 
-	 $results = $sql->select("SELECT * FROM chat");
-
-	echo json_encode($results);
+	$page->setTpl("index");
 
 });
 
