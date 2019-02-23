@@ -1,0 +1,14 @@
+{
+    "name": "user/chat_simples",
+    "description": "Simples.Inova\u0000\u0000o, Chat interno para os Devs",
+    "authors": [
+        {
+            "name": "Patrick Chagas",
+            "email": "patrickchagas21@gmail.com"
+        }
+    ],
+    "require": {
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0"
+    }
+}
