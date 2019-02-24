@@ -10,6 +10,16 @@ class User extends Model
 
 	const SESSION = "User";
 
+	//Pegar a sessão do usuário
+	public static function getFromSession()
+	{
+		$user = new User();
+		if (isset($_SESSION[User::SESSION]) && (int)$_SESSION[User::SESSION]['iduser'] > 0) {
+			$user->setData($_SESSION[User::SESSION]);
+		}
+		return $user;
+	}
+
 	public static function login($user_name, $user_password)
 	{
 

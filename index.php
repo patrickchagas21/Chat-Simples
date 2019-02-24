@@ -9,6 +9,8 @@ use \Slim\Slim;
 use \Pcode\Page;
 use \Pcode\PageSystem;
 
+require_once('functions.php');
+
 $app = new Slim();
 
 $app->config('debug', true);
