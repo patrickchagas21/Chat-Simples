@@ -81,3 +81,10 @@
 .form {
     margin-left: 145px;
 }
+
+/*
+
+*/
+.disabled {
+    opacity:0.4;        
+}

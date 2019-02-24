@@ -7,7 +7,7 @@ require_once("vendor/autoload.php");
 use \Pcode\Model\User;
 use \Slim\Slim;
 use \Pcode\Page;
-
+use \Pcode\PageSystem;
 
 $app = new Slim();
 
@@ -18,9 +18,9 @@ $app->get('/dashboard', function() {
 
 	User::verifyLogin();
 
-	$page = new Page();
+	$page = new PageSystem();
 
-	$page->setTpl("dashboard");
+	$page->setTpl("index");
 
 });
 
