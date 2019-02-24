@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Blog</title>
+		<title>Chat - Interno</title>
+		<link rel="stylesheet" href="/resources/css/style.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	</head>
 	<body>
